@@ -19,5 +19,5 @@ int main() {
 	printf("The sum of score is %d\n", sum);
 	printf("The average score is %.1f\n", avg);
 
-	return 0;
+	//return 0; // main함수에 리턴 값이 없으면 생략 가능
 }

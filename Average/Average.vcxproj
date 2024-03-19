@@ -142,6 +142,10 @@
     <ClCompile Include="Average_for.c" />
     <ClCompile Include="Average_while.c" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Operator\Algorithm_ex.sln" />
+    <None Include="..\Operator\Operator.vcxproj" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

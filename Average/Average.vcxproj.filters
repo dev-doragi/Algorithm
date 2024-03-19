@@ -22,4 +22,8 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Operator\Algorithm_ex.sln" />
+    <None Include="..\Operator\Operator.vcxproj" />
+  </ItemGroup>
 </Project>
