@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 
-int main() {
+main() {
 	int r = 0;
 	int num;
 
@@ -13,6 +13,4 @@ int main() {
 		printf("%d ", r);
 		num = num / 10;
 	}
-
-	return 0;
 }

@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main() {
+main() {
 	int n, data, large;
 	int count = 1;
 	
@@ -21,6 +21,4 @@ int main() {
 	}
 
 	printf("The largest number is %d\n", large);
-
-	return 0;
 }

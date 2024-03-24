@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main() {
+main() {
 	int n, data;
 	int mult = 1;
 	int flag = 1;
@@ -22,6 +22,4 @@ int main() {
 	if (flag == 1) mult = 0;
 
 	printf("Result: %d\n", mult);
-
-	return 0;
 }

@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS // 항상 맨 위에 위치할 것!
 #include <stdio.h>
 
-int main() {
+main() {
 	int a, b;
 	char op;
 
@@ -34,6 +34,4 @@ int main() {
 		printf("%d %c %d = 약 %.4f\n", a, op, b, c);
 	}
 	else printf("잘못된 연산자입니다. 장비를 정지합니다.\n");
-
-	return 0;
 }
