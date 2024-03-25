@@ -19,7 +19,7 @@ main() {
 		sum += scores[i];
 	}
 
-	avg = (double) sum / n;
+	avg = (double)sum / n;
 
 	for (int i = 0; i < n; i++) {
 		if (scores[i] > avg) cnt++;
