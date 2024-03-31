@@ -1,2 +1,10 @@
+<<<<<<< HEAD
 ﻿  except_0.c
   Print_num.vcxproj -> C:\Project\Algorithm\Operator\Debug\Print_num.exe
+=======
+﻿  print_num.c
+C:\Projects\Algorithm\Print_num\print_num.c(9,8): warning C4477: 'scanf' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 '__int64 *'입니다.
+C:\Projects\Algorithm\Print_num\print_num.c(9,8): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\Projects\Algorithm\Print_num\print_num.c(9,8): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+  Print_num.vcxproj -> C:\Projects\Algorithm\Operator\Debug\Print_num.exe
+>>>>>>> 7955e132e72b2a59b9f6eaf314842b382e858c77

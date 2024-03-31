@@ -1,4 +1,7 @@
 ﻿  average_score.c
+<<<<<<< HEAD
   print_score_rank.c
   코드를 생성하고 있습니다...
+=======
+>>>>>>> 7955e132e72b2a59b9f6eaf314842b382e858c77
   Print_Score_Rank.vcxproj -> C:\Project\Algorithm\Operator\Debug\Print_Score_Rank.exe

@@ -1,1 +1,2 @@
 C:\Project\Algorithm\Operator\Debug\Operator.exe
+C:\Projects\Algorithm\Operator\Debug\Operator.exe
