@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="euclid_algorithm.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="gcd_quiz.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="pancake.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="hanoi.c">
+    <ClCompile Include="selection_sort.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

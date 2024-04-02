@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{053f24d5-d3a5-456c-85f5-c5d76e0460d4}</ProjectGuid>
-    <RootNamespace>RecursiveAlgorithm</RootNamespace>
+    <ProjectGuid>{f2f1c371-ee7e-410f-99bf-79376bd96b30}</ProjectGuid>
+    <RootNamespace>SelectionSort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,10 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gcd_quiz.c" />
-    <ClCompile Include="euclid_algorithm.c" />
-    <ClCompile Include="hanoi.c" />
-    <ClCompile Include="pancake.c" />
+    <ClCompile Include="selection_sort.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
