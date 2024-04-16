@@ -1,10 +1,13 @@
-<<<<<<< HEAD
 ﻿  except_0.c
-  Print_num.vcxproj -> C:\Project\Algorithm\Operator\Debug\Print_num.exe
-=======
-﻿  print_num.c
-C:\Projects\Algorithm\Print_num\print_num.c(9,8): warning C4477: 'scanf' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 '__int64 *'입니다.
-C:\Projects\Algorithm\Print_num\print_num.c(9,8): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
-C:\Projects\Algorithm\Print_num\print_num.c(9,8): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
-  Print_num.vcxproj -> C:\Projects\Algorithm\Operator\Debug\Print_num.exe
->>>>>>> 7955e132e72b2a59b9f6eaf314842b382e858c77
+C:\Project\Algorithm\Print_num\except_0.c(25,1): error C2143: 구문 오류: ';'이(가) '<<' 앞에 없습니다.
+C:\Project\Algorithm\Print_num\except_0.c(28,1): error C2143: 구문 오류: ';'이(가) '==' 앞에 없습니다.
+C:\Project\Algorithm\Print_num\except_0.c(29,9): error C2059: 구문 오류: '숫자의 접미사가 잘못되었습니다.'
+  print_largest_num.c
+C:\Project\Algorithm\Print_num\print_largest_num.c(24,1): error C2143: 구문 오류: ';'이(가) '<<' 앞에 없습니다.
+C:\Project\Algorithm\Print_num\print_largest_num.c(28,9): error C2059: 구문 오류: '숫자의 접미사가 잘못되었습니다.'
+  print_num.c
+C:\Project\Algorithm\Print_num\print_num.c(16,1): error C2143: 구문 오류: ';'이(가) '<<' 앞에 없습니다.
+C:\Project\Algorithm\Print_num\print_num.c(19,1): error C2143: 구문 오류: ';'이(가) '==' 앞에 없습니다.
+C:\Project\Algorithm\Print_num\print_num.c(20,9): error C2059: 구문 오류: '숫자의 접미사가 잘못되었습니다.'
+  print_largest_num_2.c
+  코드를 생성하고 있습니다...

@@ -25,7 +25,10 @@ void hanoi(int n, char a, char b, char c) {
 		hanoi(n - 1, a, c, b);
 		hanoi(1, a, b, c);
 		hanoi(n - 1, b, a, c);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09654f00138658d8d788b0a22a39e8e455f7ff25
 	}
 }
 
