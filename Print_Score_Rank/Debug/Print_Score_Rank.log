@@ -1,6 +1,2 @@
-﻿  average_score.c
-  print_score_rank.c
-  코드를 생성하고 있습니다...
-  LINK : C:\Project\Algorithm\Operator\Debug\Print_Score_Rank.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
-print_score_rank.obj : error LNK2005: _main이(가) average_score.obj에 이미 정의되어 있습니다.
+﻿print_score_rank.obj : error LNK2005: _main이(가) average_score.obj에 이미 정의되어 있습니다.
 C:\Project\Algorithm\Operator\Debug\Print_Score_Rank.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
