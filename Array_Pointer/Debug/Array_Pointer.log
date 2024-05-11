@@ -1,10 +1,4 @@
-﻿  array_pointer.c
-C:\Project\Algorithm\Array_Pointer\array_pointer.c(23,19): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  array_pointer_2.c
-  prog_3.c
-  prog_4.c
-  코드를 생성하고 있습니다...
-array_pointer_2.obj : error LNK2005: _main이(가) array_pointer.obj에 이미 정의되어 있습니다.
+﻿array_pointer_2.obj : error LNK2005: _main이(가) array_pointer.obj에 이미 정의되어 있습니다.
 prog_3.obj : error LNK2005: _main이(가) array_pointer.obj에 이미 정의되어 있습니다.
 prog_3.obj : error LNK2005: _pcount이(가) array_pointer_2.obj에 이미 정의되어 있습니다.
 prog_4.obj : error LNK2005: _main이(가) array_pointer.obj에 이미 정의되어 있습니다.

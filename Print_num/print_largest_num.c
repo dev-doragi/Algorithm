@@ -21,8 +21,4 @@ main() {
 	}
 
 	printf("The largest number is %d\n", large);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7955e132e72b2a59b9f6eaf314842b382e858c77

@@ -53,7 +53,9 @@ void real_calculator(void) {
 			else if (c == '.') status = 1;
 			else if (c == '\n') {
 				result = real_operation(op, operand1, operand2);
-				printf("= %.3f", result);
+				// 실수끼리 계산한 결과가 정수가 될 경우 소수점을 표기하지 않도록 코드를 수정해보자.
+				if (result / 1.000 == (int)result) printf("= %d", (int)result);
+				else printf("= %.3f", result);
 				current_stage = STAGE3;
 				status = 0;
 			}

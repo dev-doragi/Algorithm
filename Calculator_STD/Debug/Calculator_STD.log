@@ -1,2 +1,11 @@
+<<<<<<< HEAD
 ﻿  real_calculator.c
   Calculator_STD.vcxproj -> C:\Project\Algorithm\Operator\Debug\Calculator_STD.exe
+=======
+﻿  int_calculator.c
+  LINK : C:\Project\Algorithm\Operator\Debug\Calculator_STD.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+real_calculator.obj : error LNK2005: _is_digit이(가) int_calculator.obj에 이미 정의되어 있습니다.
+real_calculator.obj : error LNK2005: _is_operator이(가) int_calculator.obj에 이미 정의되어 있습니다.
+real_calculator.obj : error LNK2005: _main이(가) int_calculator.obj에 이미 정의되어 있습니다.
+C:\Project\Algorithm\Operator\Debug\Calculator_STD.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
+>>>>>>> e999cc27def427e0da0be2a1def61623db6d8d5f
