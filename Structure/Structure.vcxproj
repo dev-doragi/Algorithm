@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="struct.c" />
+    <ClCompile Include="struct_3.c" />
+    <ClCompile Include="struct_2.c" />
+    <ClCompile Include="struct_4.c" />
+    <ClCompile Include="struct_5.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
