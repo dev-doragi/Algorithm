@@ -1,0 +1,5 @@
+﻿  bubble_sort.c
+  bubble_sort_3.c
+C:\Project\Algorithm\Bubble_Sort\bubble_sort_3.c(31,20): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다...
+  Bubble_Sort.vcxproj -> C:\Project\Algorithm\Operator\Debug\Bubble_Sort.exe

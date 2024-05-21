@@ -1,4 +1,45 @@
-﻿  struct_4.c
-  struct_5.c
-  코드를 생성하고 있습니다...
-  Structure.vcxproj -> C:\Project\Algorithm\Operator\Debug\Structure.exe
+﻿  struct_2.c
+C:\Project\Algorithm\Structure\struct_2.c(53,10): error C2065: '현재': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,10): error C2146: 구문 오류: ';'이(가) '구조체' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,20): error C2065: '구조체': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,20): error C2146: 구문 오류: ';'이(가) '포인터를' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,33): error C2065: '포인터를': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,33): error C2146: 구문 오류: ';'이(가) 'before에' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,43): error C2065: 'before에': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,43): error C2146: 구문 오류: ';'이(가) '모두' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,50): error C2065: '모두': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(53,50): error C2146: 구문 오류: ';'이(가) '복사' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,3): error C2065: '복사': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,3): error C2146: 구문 오류: ';'이(가) '현재' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,10): error C2065: '현재': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,10): error C2146: 구문 오류: ';'이(가) 'ptr은' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,17): error C2065: 'ptr은': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,17): error C2146: 구문 오류: ';'이(가) '마지막' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,27): error C2065: '마지막': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,27): error C2146: 구문 오류: ';'이(가) '노드이기' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,40): error C2065: '노드이기': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,40): error C2146: 구문 오류: ';'이(가) '때문에' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,50): error C2065: '때문에': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,50): error C2146: 구문 오류: ';'이(가) '다음' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,57): error C2065: '다음': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,57): error C2146: 구문 오류: ';'이(가) '주소가' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,67): error C2065: '주소가': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,67): error C2146: 구문 오류: ';'이(가) 'NULL인' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,75): error C2065: 'NULL인': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,75): error C2146: 구문 오류: ';'이(가) '상태' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,81): error C2065: '상태': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,90): error C2065: '이를': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,90): error C2146: 구문 오류: ';'이(가) 'inode의' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,99): error C2065: 'inode의': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,99): error C2146: 구문 오류: ';'이(가) '시작' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,106): error C2065: '시작': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,106): error C2146: 구문 오류: ';'이(가) '주소로' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,116): error C2065: '주소로': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,116): error C2146: 구문 오류: ';'이(가) '변경해야한다' 식별자 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(54,134): error C2065: '변경해야한다': 선언되지 않은 식별자입니다.
+C:\Project\Algorithm\Structure\struct_2.c(55,2): error C2059: 구문 오류: 'while'
+C:\Project\Algorithm\Structure\struct_2.c(59,8): error C2143: 구문 오류: '{'이(가) '->' 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(59,8): error C2059: 구문 오류: '->'
+C:\Project\Algorithm\Structure\struct_2.c(60,7): error C2143: 구문 오류: '{'이(가) '->' 앞에 없습니다.
+C:\Project\Algorithm\Structure\struct_2.c(60,7): error C2059: 구문 오류: '->'
+C:\Project\Algorithm\Structure\struct_2.c(61,1): error C2059: 구문 오류: '}'

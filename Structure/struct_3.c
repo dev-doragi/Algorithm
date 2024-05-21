@@ -1,11 +1,10 @@
 // // 동물 연결리스트 예제
-//
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //#include <string.h>
 //#include <stdlib.h>
 //
-//typedef struct fnode* fpointer; // 자기 참조 구조체 fnode 타입의 fpointer 포인터(배열) 생성
+//typedef struct fnode* fpointer;
 //// 동물의 이름과 수를 저장할 구조체 fnode
 //struct fnode {
 //	char animal[10]; // 동물 이름
@@ -16,6 +15,7 @@
 //void main() {
 //	fpointer head = NULL, ptr, another, before = NULL;
 //	int k, how_many = 0;
+//
 //
 //	head = (fpointer)malloc(sizeof(struct fnode)); // 첫번째 노드 생성
 //	strcpy(head->animal, "dog");
@@ -46,4 +46,5 @@
 //		ptr = ptr->next;
 //	}
 //	printf("Total number of items: %d\n", how_many);
+//}
 //}
