@@ -1,4 +1,9 @@
-﻿print_largest_num.obj : error LNK2005: _main이(가) except_0.obj에 이미 정의되어 있습니다.
+﻿  except_0.c
+  print_largest_num.c
+  print_num.c
+  print_largest_num_2.c
+  코드를 생성하고 있습니다...
+print_largest_num.obj : error LNK2005: _main이(가) except_0.obj에 이미 정의되어 있습니다.
 print_num.obj : error LNK2005: _main이(가) except_0.obj에 이미 정의되어 있습니다.
 print_largest_num_2.obj : error LNK2005: _main이(가) except_0.obj에 이미 정의되어 있습니다.
 C:\Project\Algorithm\Operator\Debug\Print_num.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.

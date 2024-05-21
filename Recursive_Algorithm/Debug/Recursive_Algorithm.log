@@ -1,2 +1,6 @@
-﻿  hanoi.c
-  Recursive_Algorithm.vcxproj -> C:\Project\Algorithm\Operator\Debug\Recursive_Algorithm.exe
+﻿  gcd_quiz.c
+  hanoi.c
+C:\Project\Algorithm\Recursive_Algorithm\hanoi.c(28,1): error C2143: 구문 오류: ';'이(가) '<<' 앞에 없습니다.
+C:\Project\Algorithm\Recursive_Algorithm\hanoi.c(31,9): error C2059: 구문 오류: '숫자의 접미사가 잘못되었습니다.'
+C:\Project\Algorithm\Recursive_Algorithm\hanoi.c(31,9): error C2041: '9' 숫자가 잘못되었습니다(기본 '8').
+  코드를 생성하고 있습니다...
