@@ -1,5 +1,4 @@
- 동물 연결리스트 예제
-
+ // 동물 연결리스트 예제
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>

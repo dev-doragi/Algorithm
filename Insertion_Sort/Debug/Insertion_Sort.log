@@ -1,0 +1,4 @@
+﻿  insertion_sort.c
+C:\Project\Algorithm\Insertion_Sort\insertion_sort.c(50,10): warning C4476: 'printf' : 서식 지정자에 알 수 없는 형식 필드 문자 '\t'이(가) 있습니다.
+C:\Project\Algorithm\Insertion_Sort\insertion_sort.c(51,20): warning C4476: 'fprintf' : 서식 지정자에 알 수 없는 형식 필드 문자 '\t'이(가) 있습니다.
+  Insertion_Sort.vcxproj -> C:\Project\Algorithm\Operator\Debug\Insertion_Sort.exe
