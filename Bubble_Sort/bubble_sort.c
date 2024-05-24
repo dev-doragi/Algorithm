@@ -17,7 +17,7 @@
 //void bubbleSort(int a[], int n) { 
 //    int i, j, flag = 1;
 //
-//    for (i = 0; i < n - 1 && flag; i++) {
+//    for (i = 0; i < n - 1 && flag; i++) { // 정렬이 완료된 인덱스를 나타내는 반복 
 //        flag = 0;
 //        for (j = 0; j < n - i - 1; j++) {
 //            if (a[j] > a[j + 1]) {
