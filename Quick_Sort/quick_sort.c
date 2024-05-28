@@ -12,6 +12,7 @@ typedef struct employee {
 void quick_sorta(edatatype a[], int left, int right);
 void quick_sortd(edatatype a[], int left, int right);
 
+// 퀵정렬 오름차순
 void quick_sorta(edatatype a[], int left, int right) {
 	long pivot;
 	int i, j;
@@ -19,10 +20,16 @@ void quick_sorta(edatatype a[], int left, int right) {
 
 	if (left < right) {
 		i = left; j = right + 1;
-		pivot = a[left].eid;
+		pivot = a[left].eid; // pivot의 초기 값은 배열의 첫번째 요소로 지정
+
+		// pivot 기준으로 큰 값과 작은 값의 인덱스를 저장하여 서로 위치를 바꾸는 반복문
 		while (i < j) {
-			do i++; while ((a[i].eid <= pivot) && (i < right)); // a[i].eid 값이 pivot보다 커질 때 또는 i 값이 right 보다 커질 때 까지 반복
+			// a[i].eid 값이 pivot보다 커질 때 또는 i 값이 right과 같아질 때 까지 반복
+			do i++; while ((a[i].eid <= pivot) && (i < right)); 
+			// a[j].eid 값이 pivot보다 작아질 때 또는 j 값이 left과 같아질 때 까지
 			do j--; while ((a[j].eid >= pivot) && (j > left));
+
+			// pivot 보다 작은 값은 왼쪽으로 가고, 큰 값은 오른쪽으로 가도록 값 교환
 			if (i < j) {
 				tmp = a[i];
 				a[i] = a[j];
@@ -41,6 +48,7 @@ void quick_sorta(edatatype a[], int left, int right) {
 	}
 }
 
+// 퀵정렬 내림차순
 void quick_sortd(edatatype a[], int left, int right) {
 	long pivot;
 	int i, j;
@@ -50,8 +58,12 @@ void quick_sortd(edatatype a[], int left, int right) {
 		i = left; j = right + 1;
 		pivot = a[left].escore;
 		while (i < j) {
+			// pivot 값을 기준으로 작은 값은 왼쪽, 큰 값은 오른쪽으로 보내야 한다.
+			// pivot보다 큰 값의 인덱스를 저장
 			do i++; while ((a[i].escore >= pivot) && (i < right));
+			// pivot보다 작은 값의 인덱스를 저장
 			do j--; while ((a[j].escore <= pivot) && (j > left));
+			// 둘의 인덱스가 역전되지 않았을 때, (pivot 기준으로 나누기 때문에 둘의 인덱스가 역전되면 기준에 어긋남)
 			if (i < j) {
 				tmp = a[i];
 				a[i] = a[j];
@@ -59,12 +71,13 @@ void quick_sortd(edatatype a[], int left, int right) {
 			}
 		}
 
-		// 이 부분을 잘 모르겠음
+		// pivot 기준 왼쪽 오른쪽 파티션이 모두 나뉘게 되면, pivot 값을 left 값과 교환한다. -> pivot을 가운데로 옮기기
 		if (j != left) {
 			tmp = a[j];
 			a[j] = a[left];
 			a[left] = tmp;
 		}
+		// pivot보다 작은 파티션과 큰 파티션에서 다시 퀵정렬 (Divide: 분할)
 		quick_sortd(a, left, j - 1);
 		quick_sortd(a, j + 1, right);
 	}

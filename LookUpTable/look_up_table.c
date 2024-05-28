@@ -9,8 +9,8 @@ void display_table(long pdb[][2], int n);
 
 void main(int argc, char* argv[]) {
 	FILE* pricedb;
-	long pdb[MAX_NUM][2], item_code, item_price;
-	int i = 0, n, num, total_price = 0, amt = 0;;
+	long pdb[MAX_NUM][2], item_code, item_num;
+	int i = 0, n, num, total_price = 0;
 
 	if ((pricedb = fopen(argv[1], "r")) == NULL) {
 		printf("파일을 읽을 수 없습니다.\n");
@@ -32,8 +32,8 @@ void main(int argc, char* argv[]) {
 	
 	while (i < num) {
 		printf("물품코드와 팔린 갯수를 입력하세요. : ");
-		scanf("%ld %ld", &item_code, &amt);
-		total_price += lookup(pdb, n, item_code) * amt;
+		scanf("%ld %ld", &item_code, &item_num);
+		total_price += lookup(pdb, n, item_code) * item_num;
 		i++;
 	}
 

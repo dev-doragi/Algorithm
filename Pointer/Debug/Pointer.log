@@ -1,0 +1,9 @@
+﻿  4-1.c
+  ex4-1.c
+  ex4-2.c
+  ex4-3.c
+  ex_malloc.c
+C:\Project\Algorithm\Pointer\ex_malloc.c(15,13): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+  pointer_and_array.c
+  코드를 생성하고 있습니다...
+  Pointer.vcxproj -> C:\Project\Algorithm\Operator\Debug\Pointer.exe

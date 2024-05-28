@@ -29,10 +29,11 @@
 //	second = (list_pointer)malloc(sizeof(struct list_node));
 //	third = (list_pointer)malloc(sizeof(struct list_node));
 //
-//	third->link = NULL; // 링크는 뒤에서부터 지정
+//	// first의 다음은 second인데, second가 아직 지정이 안되있기 때문에
+//	third->link = NULL; // 링크는 뒤에서부터 지정하는게 좋다. 
 //	second->link = third;
 //	first->link = second;
-//
+//	
 //	first->data = 100;
 //	second->data = 200;
 //	third->data = 300;

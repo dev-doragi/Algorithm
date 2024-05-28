@@ -1,2 +1,5 @@
-﻿  bubble_sort_2.c
-  Bubble_Sort.vcxproj -> C:\Project\Algorithm\Operator\Debug\Bubble_Sort.exe
+﻿bubble_sort_2.obj : error LNK2005: _main이(가) bubble_sort.obj에 이미 정의되어 있습니다.
+bubble_sort_3.obj : error LNK2005: _bubble이(가) bubble_sort_2.obj에 이미 정의되어 있습니다.
+bubble_sort_3.obj : error LNK2005: _main이(가) bubble_sort.obj에 이미 정의되어 있습니다.
+bubble_sort_3.obj : error LNK2005: _swap이(가) bubble_sort.obj에 이미 정의되어 있습니다.
+C:\Project\Algorithm\Operator\Debug\Bubble_Sort.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.

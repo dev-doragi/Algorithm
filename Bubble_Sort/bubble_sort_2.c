@@ -15,6 +15,8 @@ void main(int argc, char* argv[]) {
 	if ((stockdb = fopen(argv[1], "r")) == NULL) {
 		printf("Cannot open read file... \n"); exit(1);
 	}
+
+	// 아이템 종류의 수를 저장
 	while ((fscanf(stockdb, "%u %u", &stock[k][0], &stock[k][1])) != EOF) k++;
 
 	print_item("임의로 저장된 물품코드: \n", stock, k);
@@ -33,7 +35,8 @@ void main(int argc, char* argv[]) {
 void print_item(char* heading, unsigned a[][2], int n) {
 	int i;
 	printf(heading);
-	for (i = 0; i < n; i++)printf("%u\n", a[i][0]);
+	for (i = 0; i < n; i++) printf("%u ", a[i][0]);
+	printf("\n");
 }
 
 int bsearch_stock(unsigned a[][2], int n, unsigned key) { // 이진 탐색 진행
@@ -41,26 +44,26 @@ int bsearch_stock(unsigned a[][2], int n, unsigned key) { // 이진 탐색 진행
 
 	while (left <= right) { // 왼쪽 값이 오른쪽 값보다 작을 때 반복
 		mid = (left + right) / 2; // 중앙 값 설정
-		if (key < a[mid][0]) left = mid + 1; // key 값이 mid 값보다 작을 때 -> 
-		else if (key > a[mid][0]) right = mid - 1;
+		if (key < a[mid][0]) left = mid + 1; // key 값이 mid 값보다 작을 때 -> key값은 mid보다 오른쪽에 있음
+		else if (key > a[mid][0]) right = mid - 1; // key 값이 mid 값보다 클 때 -> key 값은 mid보다 왼쪽에 있음
 		else return mid;
 	} /* while */
 	return -1;
 } /* search */
 
 void bubble(unsigned a[][2], int n) {
-	int i = n - 1, j, flag = 1; // i는 배열의 끝 인덱스, j는 0부터 반복
+	int i = n - 1, j, flag = 1; // i는 배열의 끝 인덱스(정렬이 완료된 인덱스), j는 0부터 반복, flag는 정렬이 완료되있는 상태인지 확인용
 	unsigned tmp; // tmp 변수 하나만 사용해도 상관X
 
 	while (flag && i != 0) {
 		flag = 0;
-		for (j = 0; j < i; j++) {
+		for (j = 0; j < i; j++) { // 배열의 마지막 인덱스 전까지
 			if (a[j][0] < a[j + 1][0]) {
 				flag = 1;
 				tmp = a[j][0]; a[j][0] = a[j + 1][0]; a[j + 1][0] = tmp;
 				tmp = a[j][1]; a[j][1] = a[j + 1][1]; a[j + 1][1] = tmp;
 			} // if
 		} // for
-		i--;
+		i--; // 맨 마지막 요소부터 정렬이 완료되기 때문에 i값을 낮추며 반복한다.
 	}
 }

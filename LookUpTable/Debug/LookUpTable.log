@@ -1,3 +1,1 @@
-﻿  look_up_table.c
-C:\Project\Algorithm\LookUpTable\look_up_table.c(12,35): warning C4101: 'item_price' :참조되지 않은 지역 변수입니다.
-  LookUpTable.vcxproj -> C:\Project\Algorithm\Operator\Debug\LookUpTable.exe
+﻿  LookUpTable.vcxproj -> C:\Project\Algorithm\Operator\Debug\LookUpTable.exe

@@ -27,3 +27,15 @@ void hanoi(int n, char a, char b, char c) {
 		hanoi(n - 1, b, a, c);
 	}
 }
+
+//void hanoi(int n, char a, char c, char b) {
+//	if (n == 1) {
+//		printf("Move disk from %c to %c\n", a, c);
+//		cnt++;
+//	}
+//	else {
+//		hanoi(n - 1, a, b, c);
+//		hanoi(1, a, c, b);
+//		hanoi(n - 1, b, c, a);
+//	}
+//}
