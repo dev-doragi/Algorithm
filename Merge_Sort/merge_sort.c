@@ -27,9 +27,11 @@
 //}
 //
 //void merge(int a[], int left, int mid, int right) {
-//	int i = left, j = mid + 1, k = left, h;
+//	int i = left, j = mid + 1, k = left, h; // 왼쪽 배열의 인덱스는 i, 오른쪽 배열의 인덱스는 j로 설정
+//	// 합병된 리스트를 저장할 tlist
 //	int tlist[MAX];
 //
+//	// 두 배열의 원소를 비교하면서 하나의 배열로 정렬하는 과정
 //	while (i <= mid && j <= right) {
 //		if (a[i] <= a[j]) {
 //			tlist[k] = a[i];
@@ -40,9 +42,9 @@
 //			j++; k++;
 //		}
 //	}
-//	if (i > mid)
+//	if (i > mid) // 왼쪽 리스트가 모두 처리되서, i = mid + 1이 되면, 오른쪽 리스트를 순서대로 처리
 //		while (j <= right) tlist[k++] = a[j++];
-//	else
+//	else // 반대로 오른쪽 리스트가 모두 처리되서, j = right + 1이 되면, 왼쪽 리스트를 순서대로 처리
 //		while (i <= mid) tlist[k++] = a[i++];
 //	for (h = left; h <= right; h++) {
 //		a[h] = tlist[h];

@@ -1,4 +1,6 @@
-﻿  merge_sort_2.c
+﻿  merge_sort.c
+  merge_sort_2.c
+C:\Project\Algorithm\Merge_Sort\merge_sort_2.c(23,17): warning C4013: 'getche'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
   merge_sort_3.c
   코드를 생성하고 있습니다...
   Merge_Sort.vcxproj -> C:\Project\Algorithm\Operator\Debug\Merge_Sort.exe

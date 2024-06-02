@@ -11,38 +11,32 @@ typedef struct employee {
 
 void quick_sorta(edatatype a[], int left, int right);
 void quick_sortd(edatatype a[], int left, int right);
+void swap(long* a, long* b);
 
 // 퀵정렬 오름차순
 void quick_sorta(edatatype a[], int left, int right) {
 	long pivot;
-	int i, j;
+	int i, j; // 순환하면서 배열의 인덱스를 나타낼 변수
 	edatatype tmp;
 
-	if (left < right) {
-		i = left; j = right + 1;
+	if (left < right) { // 왼쪽 끝 인덱스가 오른쪽 끝 인덱스보다 작을 때 
+		i = left; j = right + 1; // do-while문으로 인해 i는 left+1부터, j는 right-1부터 시작한다!!!
 		pivot = a[left].eid; // pivot의 초기 값은 배열의 첫번째 요소로 지정
 
 		// pivot 기준으로 큰 값과 작은 값의 인덱스를 저장하여 서로 위치를 바꾸는 반복문
-		while (i < j) {
+		while (i < j) { // i와 j가 교차할 때 까지 반복
 			// a[i].eid 값이 pivot보다 커질 때 또는 i 값이 right과 같아질 때 까지 반복
 			do i++; while ((a[i].eid <= pivot) && (i < right)); 
 			// a[j].eid 값이 pivot보다 작아질 때 또는 j 값이 left과 같아질 때 까지
 			do j--; while ((a[j].eid >= pivot) && (j > left));
 
+			// 만약 i와 j가 교차하지 않았으면(=정렬이 안됐으면), 
 			// pivot 보다 작은 값은 왼쪽으로 가고, 큰 값은 오른쪽으로 가도록 값 교환
-			if (i < j) {
-				tmp = a[i];
-				a[i] = a[j];
-				a[j] = tmp;
-			}
+			if (i < j) swap(&a[i], &a[j]);
 		}
 
-		// 이 부분을 잘 모르겠음
-		if (j != left) {
-			tmp = a[j];
-			a[j] = a[left];
-			a[left] = tmp;
-		}
+		// pivot 기준 왼쪽 오른쪽 파티션이 모두 나뉘게 되면, pivot 값을 left 값과 교환한다. -> pivot을 기준 위치로 옮기기
+		if (j != left) swap(&a[j], &a[left]);
 		quick_sorta(a, left, j - 1);
 		quick_sorta(a, j + 1, right);
 	}
@@ -64,23 +58,22 @@ void quick_sortd(edatatype a[], int left, int right) {
 			// pivot보다 작은 값의 인덱스를 저장
 			do j--; while ((a[j].escore <= pivot) && (j > left));
 			// 둘의 인덱스가 역전되지 않았을 때, (pivot 기준으로 나누기 때문에 둘의 인덱스가 역전되면 기준에 어긋남)
-			if (i < j) {
-				tmp = a[i];
-				a[i] = a[j];
-				a[j] = tmp;
-			}
+			if (i < j) swap(&a[i], &a[j]);
 		}
 
-		// pivot 기준 왼쪽 오른쪽 파티션이 모두 나뉘게 되면, pivot 값을 left 값과 교환한다. -> pivot을 가운데로 옮기기
-		if (j != left) {
-			tmp = a[j];
-			a[j] = a[left];
-			a[left] = tmp;
-		}
+		// pivot 기준 왼쪽 오른쪽 파티션이 모두 나뉘게 되면, pivot 값을 left 값과 교환한다. -> pivot을 기준 위치로 옮기기
+		if (j != left) swap(&a[j], &a[left]);
+
 		// pivot보다 작은 파티션과 큰 파티션에서 다시 퀵정렬 (Divide: 분할)
 		quick_sortd(a, left, j - 1);
 		quick_sortd(a, j + 1, right);
 	}
+}
+
+void swap(long* a, long* b) {
+	long tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 main(int argc, char *argv[]) {
@@ -109,7 +102,7 @@ main(int argc, char *argv[]) {
 	quick_sorta(edb, 0, i - 1);
 	printf("\n\nSorted Data.... \n");
 
-	for (j = 0; j < 1; j++)
+	for (j = 0; j < i; j++)
 		fprintf(outfile, "%ld\t%s\t%d\t%s\n", (edb[j].eid), edb[j].name, (edb[j].escore), edb[j].dname);
 
 	// 2. dcode를 읽어 그 부서에 해당하는 사원정보 출력하기
