@@ -93,14 +93,14 @@ void insert_sort1(sdatatype a[], int n) {
 	sdatatype temp;
 
 	for (i = 1; i < n; i++) { // 삽입정렬은 첫번째 요소를 이미 정렬된 상태로 간주하고 진행한다.
-		temp = a[i]; // 현재 요소를 temp에 저장
-		j = i - 1; // 현재 요소의 이전 인덱스
-		while (a[j].id > temp.id && j >= 0) { // 이전 요소의 id 값이 현재 id 값보다 크고 j값이 음수가 아닐 때,
+		temp = a[i]; // 추가할 요소를 temp에 저장
+		j = i - 1; // 추가할 요소의 이전 인덱스 
+		while (a[j].id > temp.id && j >= 0) { // 이전 요소의 id 값이 추가할 id 값보다 크고 j값이 음수가 아닐 때,
 			a[j + 1] = a[j]; // 이전 요소의 값을 한칸씩 뒤로 밀기
 			j--;
 		}
-		// while이 끝나면 a[j].id는 temp.id보다 작은 값이 된다.
-		a[j + 1] = temp; // 한 칸씩 다 밀고 남은 자리에 temp 삽입
+		// while이 끝나면 a[j].id는 추가할 temp보다 작은 값이 된다.
+		a[j + 1] = temp; // 다음 자리에 temp 삽입!
 	}
 }
 

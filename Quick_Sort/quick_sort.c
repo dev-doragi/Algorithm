@@ -20,7 +20,7 @@ void quick_sorta(edatatype a[], int left, int right) {
 	edatatype tmp;
 
 	if (left < right) { // 왼쪽 끝 인덱스가 오른쪽 끝 인덱스보다 작을 때 
-		i = left; j = right + 1; // do-while문으로 인해 i는 left+1부터, j는 right-1부터 시작한다!!!
+		i = left; j = right + 1; // do-while문으로 인해 i는 left+1부터, j는 right부터 시작한다!!!
 		pivot = a[left].eid; // pivot의 초기 값은 배열의 첫번째 요소로 지정
 
 		// pivot 기준으로 큰 값과 작은 값의 인덱스를 저장하여 서로 위치를 바꾸는 반복문
@@ -35,8 +35,10 @@ void quick_sorta(edatatype a[], int left, int right) {
 			if (i < j) swap(&a[i], &a[j]);
 		}
 
-		// pivot 기준 왼쪽 오른쪽 파티션이 모두 나뉘게 되면, pivot 값을 left 값과 교환한다. -> pivot을 기준 위치로 옮기기
+		// pivot 기준 왼쪽 오른쪽 파티션이 모두 나뉘게 되면, pivot 값을 j 위치와 교환한다. -> pivot을 기준 위치로 옮기기
+		// 이때 j위치가 pivot의 위치 이므로 a[j]와 pivot을 교환한다.
 		if (j != left) swap(&a[j], &a[left]);
+		// 나누어진 그룹들에 다시 quick_sort 진행
 		quick_sorta(a, left, j - 1);
 		quick_sorta(a, j + 1, right);
 	}
@@ -61,7 +63,7 @@ void quick_sortd(edatatype a[], int left, int right) {
 			if (i < j) swap(&a[i], &a[j]);
 		}
 
-		// pivot 기준 왼쪽 오른쪽 파티션이 모두 나뉘게 되면, pivot 값을 left 값과 교환한다. -> pivot을 기준 위치로 옮기기
+		// pivot 기준 왼쪽 오른쪽 파티션이 모두 나뉘게 되면, pivot 값을 j 값과 교환한다. -> pivot을 기준 위치로 옮기기
 		if (j != left) swap(&a[j], &a[left]);
 
 		// pivot보다 작은 파티션과 큰 파티션에서 다시 퀵정렬 (Divide: 분할)

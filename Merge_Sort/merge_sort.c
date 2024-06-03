@@ -9,6 +9,7 @@ void print_list(int* list, int n, char* mesg);
 void main() {
 	int list[] = { 32, 15, 20, 55, 40, 10, 27, 30, 70, 60, 50, 90, 66, 33 }, n;
 
+	// n의 크기는 list의 크기와 같다.
 	n = sizeof(list) / sizeof(int);
 
 	print_list(list, n, "데이터 리스트 \n");
@@ -16,18 +17,20 @@ void main() {
 	print_list(list, n, "합병된 데이터 리스트: \n");
 }
 
+// 하나의 배열을 같은 크기의 2개의 부분 배열로 분할한다. (분할)
 void merge_sort(int a[], int left, int right) {
 	int mid;
 	if (left < right) {
 		mid = (left + right) / 2;
 		merge_sort(a, left, mid);
 		merge_sort(a, mid + 1, right);
+		// 분할되어 정렬된 부분 집합들을 하나로 합병한다. (정복)
 		merge(a, left, mid, right);
 	}
 }
 
 void merge(int a[], int left, int mid, int right) {
-	int i = left, j = mid + 1, k = left, h; // 왼쪽 배열의 인덱스는 i, 오른쪽 배열의 인덱스는 j로 설정
+	int i = left, j = mid + 1, k = left, h; // 왼쪽 배열의 인덱스는 i, 오른쪽 배열의 인덱스는 j로 설정, k는 합병할 배열의 인덱스
 	// 합병된 리스트를 저장할 tlist
 	int tlist[MAX];
 
@@ -46,6 +49,7 @@ void merge(int a[], int left, int mid, int right) {
 		while (j <= right) tlist[k++] = a[j++];
 	else // 반대로 오른쪽 리스트가 모두 처리되서, j = right + 1이 되면, 왼쪽 리스트를 순서대로 처리
 		while (i <= mid) tlist[k++] = a[i++];
+	// 합병정렬된 리스트를 a에다가 복사
 	for (h = left; h <= right; h++) {
 		a[h] = tlist[h];
 	}

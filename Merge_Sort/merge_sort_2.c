@@ -41,7 +41,7 @@ int merge(int* a1, int* a2, int* a, int n1, int n2) {
 
 	while (i < n1 && j < n2) {
 		if (a1[i] <= a2[j]) a[k++] = a1[i++];
-		else if (a1[i] > a2[j]) a[k++] = a2[j++];
+		else a[k++] = a2[j++];
 	}
 
 	if (i == n1)
