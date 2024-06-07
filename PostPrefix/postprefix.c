@@ -16,7 +16,7 @@ int is_operator(char c); // 연산자 판별 함수
 
 void main() {
 	printf("Input the expression as a postfix notation: \n");
-	//gets(pexpr);
+	// gets(pexpr);
 	for (int i = 0; i < 3; i++) {
 		scanf("%s", pexpr); // gets(pexpr) 후위표기식 입력
 		printf("Evaluation Value: %d\n", cal()); // cal()함수 실행 후 연산된 결과 출력

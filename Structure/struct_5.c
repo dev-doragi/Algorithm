@@ -28,21 +28,24 @@ main(int argc, char* argv[])
 
 	dnum = i; // 강의 개수를 dnum에 저장
 
-	printf("수강인원이 40명 이상인 강좌 코드 번호를 출력하시오.\n"); 
+	printf("수강인원이 40명 이상인 강좌 코드 번호를 출력합니다.\n"); 
 	for (i = 0; i < dnum; i++) 
 		if (cdb[i].snum >= 40) printf("%s\n", cdb[i].courseid);
+	printf("\n");
 
 	printf("검색하고자 하는 교수이름 입력 : ");
 	scanf("%s", sprof); 
-	printf("%s 교수가 강의하는 강좌코드와 강의실 번호를 출력하시오.\n", sprof); 
+	printf("%s 교수가 강의하는 강좌코드와 강의실 번호를 출력합니다..\n", sprof); 
 
 	for (i = 0; i < dnum; i++) 
-		if (!strcmp(cdb[i].tname, sprof)) 
+		if (!strcmp(cdb[i].tname, sprof)) // strcmp는 두 값이 같을 경우 0 반환한다.
 			printf("%s\t%u\n", cdb[i].courseid, cdb[i].roomnum);
+	printf("\n");
+
 
 	printf("검색하고자 하는 강의실 번호 입력 : ");
 	scanf("%u", &sroomnum); 
-	printf("%u 강의실에서 수업하는 강좌코드와 담당교수를 출력하시오.\n", sroomnum); 
+	printf("%u 강의실에서 수업하는 강좌코드와 담당교수를 출력합니다.\n", sroomnum); 
 
 	for (i = 0; i < dnum; i++) 
 		if (cdb[i].roomnum == sroomnum) 

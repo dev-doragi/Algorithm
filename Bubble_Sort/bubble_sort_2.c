@@ -56,10 +56,10 @@ void bubble(unsigned a[][2], int n) {
 	unsigned tmp; // tmp 변수 하나만 사용해도 상관X
 
 	while (flag && i != 0) {
-		flag = 0;
+		flag = 0; // flag를 0으로 먼저 변경
 		for (j = 0; j < i; j++) { // 배열의 마지막 인덱스 전까지
-			if (a[j][0] < a[j + 1][0]) {
-				flag = 1;
+			if (a[j][0] < a[j + 1][0]) { // 만약 정렬이 안된 데이터가 있다면,
+				flag = 1; // flag를 1로 변경
 				tmp = a[j][0]; a[j][0] = a[j + 1][0]; a[j + 1][0] = tmp;
 				tmp = a[j][1]; a[j][1] = a[j + 1][1]; a[j + 1][1] = tmp;
 			} // if

@@ -78,11 +78,14 @@ void insert_sort(sdatatype a[], int n) {
 	int i, j;
 	sdatatype temp;
 
+	// i가 1부터 시작하는 이유: 삽입 정렬은 이미 정렬된 배열을 기준으로 요소를 삽입하면서 정렬한다. 
+	// 즉, a[i] 요소를 전 요소들의 배열에 삽입하는 과정이라 생각하면 쉬움.
 	for (i = 1; i < n; i++) {
-		temp = a[i];
-		for (j = i - 1; j >= 0 && a[j].id > temp.id; j--) {
+		temp = a[i]; // 삽입할 배열 요소를 temp에 저장
+		for (j = i - 1; j >= 0 && a[j].id > temp.id; j--) { // i-1부터, (정렬된)첫번째 요소까지 반복
 			a[j + 1] = a[j];
 		}
+		// 반복문이 끝나면 a[j].id는 추가할 temp보다 작은 값이 된다.
 		a[j + 1] = temp;
 	}
 }
@@ -95,7 +98,7 @@ void insert_sort1(sdatatype a[], int n) {
 	for (i = 1; i < n; i++) { // 삽입정렬은 첫번째 요소를 이미 정렬된 상태로 간주하고 진행한다.
 		temp = a[i]; // 추가할 요소를 temp에 저장
 		j = i - 1; // 추가할 요소의 이전 인덱스 
-		while (a[j].id > temp.id && j >= 0) { // 이전 요소의 id 값이 추가할 id 값보다 크고 j값이 음수가 아닐 때,
+		while (a[j].id > temp.id && j >= 0) { // 이전 요소의 id 값이 추가할 id 값(temp.id)보다 크고 j값이 음수가 아닐 때 반복
 			a[j + 1] = a[j]; // 이전 요소의 값을 한칸씩 뒤로 밀기
 			j--;
 		}
@@ -111,10 +114,10 @@ void insert_sort2(sdatatype a[], int n) {
 	for (i = 1; i < n; i++) {
 		temp = a[i];
 		j = i - 1;
-		while (a[j].score < temp.score && j >= 0) { // 이전 요소의 score 값이 현재 score 값보다 크고, j가 음수가 아닐 때,
+		while (a[j].score < temp.score && j >= 0) { // 이전 요소의 score 값이 현재 score 값보다 작고, j가 음수가 아닐 때,
 			a[j + 1] = a[j];
 			j--;
-		}
+		} // 반복이 끝나면 a[j].id는 추가할 temp보다 큰 값이 된다.
 		a[j + 1] = temp; // 한 칸씩 다 밀고 남은 자리에 temp 삽입
 	}
 }

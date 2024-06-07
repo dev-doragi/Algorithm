@@ -41,7 +41,7 @@ void main(int argc, char* argv[]) {
 	printf("모든 물품의 가격: %ld\n", stocksum(pdb, n));
 }
 
-long stocksum(long s[][2], int n) {
+long stocksum(long s[][2], int n) { // 배열의 모든 가격을 더하는 함수
 	long sum = 0;
 	int i;
 	for (i = 0; i < n; i++) {
@@ -50,7 +50,7 @@ long stocksum(long s[][2], int n) {
 	return sum;
 }
 
-long lookup(long pdb[][2], int n, long item_code) {
+long lookup(long pdb[][2], int n, long item_code) { // 배열과 전체크기, 아이템 코드를 입력받아 해당 아이템을 찾는 함수
 	int i;
 	for (i = 0; i < n; i++) {
 		if (pdb[i][0] == item_code) {

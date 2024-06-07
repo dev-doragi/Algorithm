@@ -11,6 +11,7 @@
 //};
 //
 //void print_list(list_pointer ptr);
+//void print_list_while(list_pointer ptr);
 //list_pointer make_node();
 //int nodesum(list_pointer ptr);
 //int nodenumber(list_pointer ptr);
@@ -19,6 +20,8 @@
 //	list_pointer ptr;
 //	ptr = make_node(); // 링크 노드 만든 후 ptr에 첫번째 노드의 주소 저장
 //	print_list(ptr);
+//	printf("\n");
+//	print_list_while(ptr);
 //	printf("list안의 data 합: %d\n", nodesum(ptr));
 //	printf("list안의 node 수: %d\n", nodenumber(ptr));
 //}
@@ -49,10 +52,23 @@
 //	printf("\n");
 //}
 //
+//void print_list_while(list_pointer ptr) {
+//	printf("The list contains: ");
+//	while (ptr) {
+//		printf("%4d", ptr->data);
+//		ptr = ptr->link;
+//	}
+//	printf("\n");
+//}
+//
 //int nodesum(list_pointer ptr) {
 //	int sum = 0;
-//	for (; ptr; ptr = ptr->link)
+//	//for (; ptr; ptr = ptr->link)
+//	//	sum += ptr->data;
+//	while (ptr) {
 //		sum += ptr->data;
+//		ptr = ptr->link;
+//	}
 //	return sum;
 //}
 //
