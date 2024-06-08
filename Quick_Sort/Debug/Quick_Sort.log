@@ -1,9 +1,14 @@
 ﻿  quick_sort.c
-C:\Project\Algorithm\Quick_Sort\quick_sort.c(69,25): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
-C:\Project\Algorithm\Quick_Sort\quick_sort.c(69,32): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
-C:\Project\Algorithm\Quick_Sort\quick_sort.c(73,28): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
-C:\Project\Algorithm\Quick_Sort\quick_sort.c(73,38): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
-C:\Project\Algorithm\Quick_Sort\quick_sort.c(57,12): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
-C:\Project\Algorithm\Quick_Sort\quick_sort.c(96,7): warning C4013: 'exit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Project\Algorithm\Quick_Sort\quick_sort.c(91,7): warning C4101: 'choice' :참조되지 않은 지역 변수입니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(35,25): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(35,32): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(40,28): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(40,38): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(20,12): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(63,25): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(63,32): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(67,28): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(67,38): warning C4133: '함수': 'edatatype *'과(와) 'long *' 사이의 형식이 호환되지 않습니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(51,12): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(90,7): warning C4013: 'exit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Project\Algorithm\Quick_Sort\quick_sort.c(85,7): warning C4101: 'choice' :참조되지 않은 지역 변수입니다.
   Quick_Sort.vcxproj -> C:\Project\Algorithm\Operator\Debug\Quick_Sort.exe

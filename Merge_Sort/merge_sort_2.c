@@ -4,7 +4,7 @@
 
 void print_list(int list[], int n, char* mesg);
 void quick_sort(int a[], int left, int right);
-int merge(int *a1, int *a2, int *a, int n1, int n2);
+int merge(int *a1, int *a2, int *a, int n1, int n2); // 리스트 두개를 합병해서 새로운 리스트에 저장하는 함수
 
 main() {
 	int list1[] = { 32, 15, 20, 50, 40, 10, 22, 30 };
@@ -30,26 +30,26 @@ main() {
 	print_list(list1, n1, "\n\n정렬된 list1의 요소: ");
 	print_list(list2, n1, "정렬된 list2의 요소: ");
 
-	n = merge(list1, list2, merged_list, n1, n2);
+	n = merge(list1, list2, merged_list, n1, n2); // 배열 두개와 새로운 배열, 그리고 list1, 2의 크기를 인수로 전달
 
 	print_list(merged_list, n, "합병된 merged_list의 요소: ");
 }
 
 // 두 데이터 리스트를 합치는 함수 merge
-int merge(int* a1, int* a2, int* a, int n1, int n2) {
+int merge(int* a1, int* a2, int* merged_list, int n1, int n2) {
 	int i = 0, j = 0, k = 0;
 
-	while (i < n1 && j < n2) {
-		if (a1[i] <= a2[j]) a[k++] = a1[i++];
-		else a[k++] = a2[j++];
+	while (i < n1 && j < n2) { // 배열의 인덱스가 아닌 크기이기 때문에 i < n1, j < n2이다.
+		if (a1[i] <= a2[j]) merged_list[k++] = a1[i++];
+		else merged_list[k++] = a2[j++];
 	}
 
 	if (i == n1)
-		while (j < n2) a[k++] = a2[j++];
+		while (j < n2) merged_list[k++] = a2[j++];
 	else
-		while (i < n1) a[k++] = a1[i++];
+		while (i < n1) merged_list[k++] = a1[i++];
 
-	return k;
+	return k; // 합병이 완료된 배열의 크기 리턴
 }
 
 void quick_sort(int a[], int left, int right) {
@@ -86,7 +86,7 @@ void print_list(int a[], int n, char* mesg) {
 	printf(mesg);
 	for (i = 0; i < n; i++) {
 		printf("%d ", a[i]);
-		//if ((i % 10) == 9) printf("\n"); // 줄 바꿈
+		// if ((i % 10) == 9) printf("\n"); // 줄 바꿈
 	}
 	printf("\n\n");
 }
