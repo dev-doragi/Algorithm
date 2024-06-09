@@ -4,7 +4,7 @@
 
 void print_list(int list[], int n, char* mesg);
 void quick_sort(int a[], int left, int right);
-int merge(int *a1, int *a2, int *a, int n1, int n2); // 리스트 두개를 합병해서 새로운 리스트에 저장하는 함수
+int merge(int *a1, int *a2, int *merged_list, int n1, int n2); // 리스트 두개를 합병해서 새로운 리스트에 저장하는 함수
 
 main() {
 	int list1[] = { 32, 15, 20, 50, 40, 10, 22, 30 };

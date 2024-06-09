@@ -1,4 +1,12 @@
-﻿  merge_sort_2.c
-  merge_sort_3.c
+﻿  merge_sort.c
+  merge_sort_2.c
+C:\Project\Algorithm\Merge_Sort\merge_sort_2.c(23,17): warning C4013: 'getche'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
   코드를 생성하고 있습니다...
-  Merge_Sort.vcxproj -> C:\Project\Algorithm\Operator\Debug\Merge_Sort.exe
+  LINK : C:\Project\Algorithm\Operator\Debug\Merge_Sort.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+merge_sort_2.obj : error LNK2005: _main이(가) merge_sort.obj에 이미 정의되어 있습니다.
+merge_sort_2.obj : error LNK2005: _merge이(가) merge_sort.obj에 이미 정의되어 있습니다.
+merge_sort_2.obj : error LNK2005: _print_list이(가) merge_sort.obj에 이미 정의되어 있습니다.
+merge_sort_3.obj : error LNK2005: _main이(가) merge_sort.obj에 이미 정의되어 있습니다.
+merge_sort_3.obj : error LNK2005: _merge이(가) merge_sort.obj에 이미 정의되어 있습니다.
+merge_sort_3.obj : error LNK2005: _print_list이(가) merge_sort.obj에 이미 정의되어 있습니다.
+C:\Project\Algorithm\Operator\Debug\Merge_Sort.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
