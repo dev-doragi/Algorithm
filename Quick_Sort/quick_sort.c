@@ -104,8 +104,11 @@ main(int argc, char *argv[]) {
 	quick_sorta(edb, 0, i - 1);
 	printf("\n\nSorted Data.... \n");
 
-	for (j = 0; j < i; j++)
+	for (j = 0; j < i; j++) {
 		fprintf(outfile, "%ld\t%s\t%d\t%s\n", (edb[j].eid), edb[j].name, (edb[j].escore), edb[j].dname);
+		printf("%ld\t%s\t%d\t%s\n", edb[j].eid, edb[j].name, edb[j].escore, edb[j].dname);
+	}
+	printf("\n");
 
 	// 2. dcode를 읽어 그 부서에 해당하는 사원정보 출력하기
 	printf("Sales Department : S110\n");
@@ -119,7 +122,7 @@ main(int argc, char *argv[]) {
 			printf("%ld\t%s\t%d\n", (edb[j].eid), edb[j].name, edb[j].escore);
 	}
 
-	// 3. 영어 성적이 큰 값부터 정보 출력하기
+	// 3. 영어 성적의 내림차순으로 출력
 	printf("\n\nFrom the highest English score To the lowest....\n");
 
 	quick_sortd(edb, 0, i - 1);

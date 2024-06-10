@@ -53,7 +53,6 @@ int make_bst(CARTYPE** root, unsigned id, char grade) {
             // 추가할 노드는 왼쪽으로 간다.
             before = tptr;
             tptr = tptr->left;
-
         }
         else if (id > tptr->carid) {
             // 추가할 노드는 오른쪽으로 간다.
@@ -65,7 +64,6 @@ int make_bst(CARTYPE** root, unsigned id, char grade) {
             return 0;
     }
     // while문이 끝나면, before의 값은 추가할 node의 부모 노드가 된다.
-
 
     // 노드를 추가할 위치를 찾았으면, 노드를 생성한다.
     node = (CARTYPE*)malloc(sizeof(CARTYPE));
